@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<style>
+    body{
+        background-color: rgb(93, 143, 201);
+    }
+    table {
+        border-spacing: 5px 8px;
+        margin: auto;
+
+    }
+    td{
+        border-radius: 4px;
+        background-color: white;
+        margin: 25px 0;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>Deutsch</th>
+            <th>English</th>
+            <th>Score</th>
+        </tr>
+        <% for(var i = 0; i < textObjects.length; i++) { %>
+        <tr>
+            <td><%=textObjects[i]["Deutsch"]%></td>
+            <td><%=textObjects[i]["English"]%></td>
+            <td><%=textObjects[i]["Score"]%></td>
+        </tr>
+        <% } %>
+    </table>
+    
+</body>
+</html>
